@@ -8,7 +8,7 @@ body {
   grid-template-columns: auto auto;
   align-items: center;
   justify-content: center;
-  margin: 300px auto 50px;
+  margin: 200px auto 50px;
   grid-gap: 50px;
   background-image: url("./images/shttefan-viNPa2F7fnw-unsplash.jpg");
   background-repeat: no-repeat;
@@ -43,12 +43,43 @@ form {
   border-bottom-right-radius: 11px;
   border: none;
   background: tan;
+  cursor: pointer;
 }
 
 .container {
-  border: 1px solid wheat;
+  height: 400px;
+  width: 400px;
+  border: none;
   padding: 30px;
   max-width: 400px;
+  background-color: rgba(210, 180, 140, 0.361);
+  border-radius: 15px;
+  box-shadow: 3px 5px 3px rgb(42, 43, 46);
+}
+
+.weather{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgba(18, 21, 10, 0.947);
+  font-size: 23px;
+  text-shadow: 1px 1px 1px rgb(112, 109, 109);
+}
+.weather i {
+  padding-right: 17px;
+}
+
+img {
+  position: absolute;
+  right: 0em;
+  bottom: 6em;
+  height: 150px;
+}
+
+#temp{
+  font-weight: bold;
 }
 
 @media screen and (max-width: 800px) {
